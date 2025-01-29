@@ -6,10 +6,294 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Legal Solution</title>
+    <style>
+        .font-primary{
+            font-family: "EB Garamond", serif;
+        }
+        .font-para{
+            font-family: "Poppins", serif;
+        
+        }
+
+        .color-primary{
+            color: rgba(182, 140, 90, 1);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford:'#da373d',
+                'color-primary':'rgba(182, 140, 90, 100%)',
+                
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <h1 class="font-bold text-blue-600 text-2xl">Hello!</h1>
-    
+<body class="mb-24">
+    <header class="mb-24">
+        <!-- navigation section  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>Service</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                        <li>
+                            <a>Cases</a>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Blogs</a>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Contact Us</a>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </div>
+
+                  <img src="images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Cases</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                        <details>
+                          <summary>Blogs</summary>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details>
+                          <summary>Services</summary>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details>
+                          <summary>Contact Us</summary>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      
+                    
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-active bg-color-primary text-white border-none">Free Consultation</button>
+                  
+                </div>
+              </div>
+            </nav>
+
+        <!-- banner section  -->
+         <section>
+            <div
+  class="hero min-h-screen "
+  style="background-image: url(images/banner.png),linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(17,17,17,0) 100%);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold font-primary text-white">We Provide Effective Legal Solutions</h1>
+      <p class="mb-5">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </p>
+      <input type="text" placeholder="Type here" class="input w-full max-w-xs mt-5" />
+      <button class="btn btn-active bg-color-primary text-white border-none mt-5">Search</button>
+    </div>
+  </div>
+</div>
+
+         </section>
+    </header>
+    <!-- main section -->
+    <main class="mb-24 mx-auto"> 
+        <!-- legal practice area section      -->
+        <section class=" space-y-12 items-center mb-24 mx-auto">
+         <h3 class="text-center font-primary text-4xl font-bold">The Legal Practice Area</h3>
+         <p class="font-para text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+         <!-- card container -->
+          <div class="container grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center mx-auto">
+            <!-- card-1  -->
+            <div class="bg-base-100 lg:w-96 border ">
+                <figure class="px-10 pt-10 items-center">
+                  <img
+                    src="images/business.png"
+                    alt="business logo"
+                class="items-center w-fit ml-30" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Business Law</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolores quaerat accusamus, totam error libero. Dolores, quaerat consequatur architecto accusantium hic unde, amet quasi eos sint aspernatur, laboriosam culpa cum.</p>
+                  <div class="card-actions">
+                    <img src="images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- card-2  -->
+              <div class="bg-base-100 lg:w-96 border">
+                <figure class="px-10 pt-10 items-center">
+                  <img
+                    src="images/business.png"
+                    alt="business logo"
+                class="items-center w-fit ml-30" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Business Law</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolores quaerat accusamus, totam error libero. Dolores, quaerat consequatur architecto accusantium hic unde, amet quasi eos sint aspernatur, laboriosam culpa cum.</p>
+                  <div class="card-actions">
+                    <img src="images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- card-3  -->
+              <div class="bg-base-100 lg:w-96 border">
+                <figure class="px-10 pt-10 items-center">
+                  <img
+                    src="images/business.png"
+                    alt="business logo"
+                class="items-center w-fit ml-30" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Business Law</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolores quaerat accusamus, totam error libero. Dolores, quaerat consequatur architecto accusantium hic unde, amet quasi eos sint aspernatur, laboriosam culpa cum.</p>
+                  <div class="card-actions">
+                    <img src="images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- card-4  -->
+              <div class="bg-base-100 w-96 border">
+                <figure class="px-10 pt-10 items-center">
+                  <img
+                    src="images/business.png"
+                    alt="business logo"
+                class="items-center w-fit ml-30" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Business Law</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolores quaerat accusamus, totam error libero. Dolores, quaerat consequatur architecto accusantium hic unde, amet quasi eos sint aspernatur, laboriosam culpa cum.</p>
+                  <div class="card-actions">
+                    <img src="images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+             <!-- card-5  -->
+             <div class="bg-base-100 w-96 border">
+                <figure class="px-10 pt-10 items-center">
+                  <img
+                    src="images/business.png"
+                    alt="business logo"
+                class="items-center w-fit ml-30" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Business Law</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolores quaerat accusamus, totam error libero. Dolores, quaerat consequatur architecto accusantium hic unde, amet quasi eos sint aspernatur, laboriosam culpa cum.</p>
+                  <div class="card-actions">
+                    <img src="images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <!-- card-6  -->
+              <div class="bg-base-100 w-96 border">
+                <figure class="px-10 pt-10 items-center">
+                  <img
+                    src="images/business.png"
+                    alt="business logo"
+                class="items-center w-fit ml-30" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Business Law</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolores quaerat accusamus, totam error libero. Dolores, quaerat consequatur architecto accusantium hic unde, amet quasi eos sint aspernatur, laboriosam culpa cum.</p>
+                  <div class="card-actions">
+                    <img src="images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </section>
+        <!-- Client say section  -->
+         <section>
+
+         </section>
+         <!-- Ask Question section  -->
+          <section>
+
+          </section>
+          <!-- Contact with us section  -->
+           <section>
+
+           </section>
+           <!-- footer section  -->
+           <footer>
+
+           </footer>
+    </main>
+
 </body>
 </html>
